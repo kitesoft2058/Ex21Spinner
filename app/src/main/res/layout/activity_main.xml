@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!--  1. entries속성을 이용한 간단한 Spinner 구현 [JAVA코드 1줄도 작성할 필요없음]  -->
+<!--    <Spinner-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:entries="@array/datas">-->
+<!--    </Spinner>-->
+
+    <!-- 2. Adapter   -->
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:prompt="@string/spinner_prompt">
+        <!--  prompt속성으로 지정된 제목글씨는 spinnerMode="dialog"일때만 동작함 [기본값인 dropdown일때는 무시됨]  -->
+    </Spinner>
+
+</RelativeLayout>
